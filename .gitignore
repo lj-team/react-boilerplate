@@ -1,0 +1,10 @@
+node_modules/
+dist/
+.idea/
+npm-debug.log
+*.swp
+*.swm
+*.swn
+*.swo
+.DS_Store
+stats.json
