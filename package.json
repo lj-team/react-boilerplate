@@ -5,6 +5,7 @@
     "precommit": "git diff --cached --name-only | grep -e '\\.js$' | xargs eslint",
     "lint": "eslint --fix common/ server/ client/",
     "test": "jest --no-cache",
+    "preview": "start-storybook -p 9001 -c .preview",
     "start": "DEBUG=react-boilerplate:* node server/index.js",
     "start-with-ssr": "SSR=true DEBUG=react-boilerplate:* node server/index.js",
     "start-prod": "NODE_ENV=production DEBUG=react-boilerplate:* node server/index.js",
@@ -47,6 +48,7 @@
     "webpack": "2.3.2"
   },
   "devDependencies": {
+    "@kadira/storybook": "2.35.3",
     "babel-eslint": "7.2.1",
     "babel-jest": "19.0.0",
     "enzyme": "2.8.0",
