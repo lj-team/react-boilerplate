@@ -9,10 +9,16 @@ global.__PROJECT__ = 'react-boilerplate'
 
 require('babel-polyfill')
 require('babel-register')({
-  plugins: [
-    'babel-plugin-transform-es2015-modules-commonjs',
+  presets: [
+    [
+      'lj-team',
+      {
+        alias: {
+          common: './common',
+        },
+      },
+    ],
   ],
-  ignore: /node_modules(?!\/a-module-which-you-have-to-build\/es6)/,
 })
 
 require('./server')
