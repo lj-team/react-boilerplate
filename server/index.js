@@ -8,17 +8,6 @@ global.__LOC__ = NODE_ENV === 'local'
 global.__PROJECT__ = 'react-boilerplate'
 
 require('babel-polyfill')
-require('babel-register')({
-  presets: [
-    [
-      'lj-team',
-      {
-        alias: {
-          common: './common',
-        },
-      },
-    ],
-  ],
-})
+require('babel-register')({ presets: 'lj-team' })
 
 require('./server')

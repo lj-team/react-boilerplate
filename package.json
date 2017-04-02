@@ -56,25 +56,13 @@
       [
         "lj-team",
         {
-          "modules": false,
-          "alias": {
-            "common": "./common"
-          }
+          "modules": false
         }
       ]
     ],
     "env": {
       "test": {
-        "presets": [
-          [
-            "lj-team",
-            {
-              "alias": {
-                "common": "./common"
-              }
-            }
-          ]
-        ]
+        "presets": "lj-team"
       }
     }
   },
